@@ -1,20 +1,23 @@
-let tnr = [1,2,3,4,5,6,7]
-    ,bazaowoc = ["papaja","banan","truskawka","mandarynka"]
-    ,nr = prompt("wat nr u lookin fo")
+ let bazaOwoc = ["papaja","banan","truskawka","mandarynka"]
+     ,bazaCena = [5,7,9,11]
     ,owoc = prompt("Jakiego owocu szukasz")
-    ,gotnr = false
-    ,gotowoc = false;
-for (let i=0;i<tnr.length;i++)
-    if (+nr === tnr[i])
-        gotnr = true;
-for (let i=0;i<bazaowoc.length;i++)
-    if (owoc === towoc[i])
-        gotcolor = true;
-if (true === gotowoc && gotowoc=== gotnr)
-    document.write("we got what you need")
-else if (gotowoc === true)
-    document.write(`we dont have the nr ${nr}`)
-else if (gotnr === true)
-    document.write(`we dont have the color ${owoc}`)
+    ,gotOwoc = false
+    ,cena = [] ;
+
+
+for (let i=0;i<bazaOwoc.length;i++)
+    if (owoc === bazaOwoc[i])
+    { gotOwoc = true;
+     cena = bazaCena[i]
+    }
+
+
+
+if (true === gotOwoc)
+    document.write(`Mamy ${owoc} w cenie ${cena} zł`)
 else
-    document.write(`we dont have the nr ${nr} or the color ${owoc}`)
+    document.write(`Przykro nam, nie ma tego owoca ${owoc}`)
+
+
+
+
