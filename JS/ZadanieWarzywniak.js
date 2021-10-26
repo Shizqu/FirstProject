@@ -1,13 +1,13 @@
 let tnr = [1,2,3,4,5,6,7]
-    ,towoc = ["papaja","banan","truskawka","mandarynka"]
+    ,bazaowoc = ["papaja","banan","truskawka","mandarynka"]
     ,nr = prompt("wat nr u lookin fo")
-    ,owoc = prompt("wat color u lookin fo")
+    ,owoc = prompt("Jakiego owocu szukasz")
     ,gotnr = false
     ,gotowoc = false;
 for (let i=0;i<tnr.length;i++)
     if (+nr === tnr[i])
         gotnr = true;
-for (let i=0;i<towoc.length;i++)
+for (let i=0;i<bazaowoc.length;i++)
     if (owoc === towoc[i])
         gotcolor = true;
 if (true === gotowoc && gotowoc=== gotnr)
