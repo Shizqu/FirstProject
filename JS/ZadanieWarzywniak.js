@@ -4,15 +4,11 @@
     ,gotOwoc = false
     ,cena = [] ;
 
-
 for (let i=0;i<bazaOwoc.length;i++)
     if (owoc === bazaOwoc[i])
     { gotOwoc = true;
      cena = bazaCena[i]
     }
-
-
-
 if (true === gotOwoc)
     document.write(`Mamy ${owoc} w cenie ${cena} zł`)
 else
