@@ -14,6 +14,7 @@ for(let i=0;i<3;i++)
     warzywo[i].Price = prompt('Podaj cene warzywa');
     warzywo[i].Stock = prompt('Podaj ilosc warzywa w magazynie');
 }
+/*
 for(let i=0;i<3;i++)
 {
     document.write(warzywo[i].Name+ " Mamy w cenie: ");
@@ -21,20 +22,83 @@ for(let i=0;i<3;i++)
     document.write(warzywo[i].Stock);
     document.write('<br>');
 }
-
+*/
+/*
 for(let i=0;i<3;i++)
 {
     if(warzywo[i].Price<5)
         document.write('Warzywa o cenie mniejszej niz 5 to:'+warzywo[i].Name+ ' , ');
 }
+*/
+
+let answer = prompt("Cena Czy ilosc dostepnych warzyw");
+if(answer=="cena")
+{
+    let PriceA = prompt("Jaki masz limit hajsu");
+    for(let i=0;i<3;i++)
+    {
+        if (PriceA >=warzywo[i].Price)
+        {
+            document.write(' W tej cenie mamy ' +warzywo[i].Name);
+            document.write(' W cenie ' +warzywo[i].Price);
+            document.write(' w ilości ' +warzywo[i].Stock);
+            document.write('<br>');
+        }
+    }
+}
+if(answer=="ilosc")
+{
+    let StockA = prompt(' Ile chcesz ')
+    for(let i=0;i<3;i++)
+    {
+        if (StockA <=warzywo[i].Stock)
+        {
+            document.write(' W tej ilosci mamy ' +warzywo[i].Name);
+            document.write(' o cenie ' +warzywo[i].Price);
+            document.write(' w ilości ' +warzywo[i].Stock);
+            document.write('<br>');
+        }
+    }
+}
 
 
+/*
 let NameA = prompt("Jakie warzywo cie interesuje");
+let PriceA = prompt("Jaki masz limit hajsu");
+let StockA = prompt("Jak duzo bys mogl kupic");
 for(let i=0;i<3;i++)
 {
     if (NameA === warzywo[i].Name)
     {
-        document.write("interesuje cie " + NameA+ ' , Mamy je w cenie:' + warzywo[i].Price + ' i ilości w magazynie:' + warzywo[i].Stock);
+        document.write("interesuje cie " + NameA+ ' , mamy je w cenie: ' + warzywo[i].Price + ' i ilości w magazynie: ' + warzywo[i].Stock);
+        document.write('<br>');
+    }
+    else
+    {
+        document.write("NIE MA TAKIEGO WARZYWA ");
+        document.write('<br>');
+    }
+
+    if(PriceA <= warzywo[i].Price )
+    {
+    document.write("W tej cenie mamy: " +warzywo[i].Name);
+    document.write('<br>');
+    }
+    else
+    {
+        document.write("W tej cenie nie mamy warzywa ");
+        document.write('<br>');
+    }
+
+    if(StockA <= warzywo[i].Stock)
+    {
+        document.write("TEST ");
+        document.write('<br>');
+    }
+    else
+    {
+        document.write("Nie mamy tyle na magazynie ");
+        document.write('<br>');
     }
 }
 
