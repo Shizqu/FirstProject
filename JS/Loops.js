@@ -1,3 +1,5 @@
+
+/*
 let tnr = [1,2,3,4,5,6,7]
     ,tcolor = ["red","blue","green"]
     ,nr = prompt("wat nr u lookin fo")
@@ -18,3 +20,24 @@ else if (gotnr === true)
     document.write(`we dont have the color ${color}`)
 else
     document.write(`we dont have the nr ${nr} or the color ${color}`)
+
+    */
+
+let licz = 10;
+// pętla do ... while
+do {
+    console.log("Pętla do ... while")
+    console.log("Odliczam");
+    licz--;
+    document.write(licz);
+}
+while (licz <= 0)
+
+// pętla while
+while (licz <=0)
+{
+    console.log("Pętla while")
+    console.log("Odliczam");
+    licz--;
+    document.write(licz);
+}

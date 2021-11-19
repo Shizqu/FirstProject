@@ -12,7 +12,7 @@ for (let i=0;i<bazaOwoc.length;i++)
 if (true === gotOwoc)
     document.write(`Mamy ${owoc} w cenie ${cena} zł`)
 else
-    document.write(`Przykro nam, nie ma tego owoca ${owoc}`)
+    document.write(`Przykro nam, nie mamy ${owoc}`)
 
 
 
