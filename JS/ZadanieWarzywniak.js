@@ -1,8 +1,8 @@
  let bazaOwoc = ["papaja","banan","truskawka","mandarynka"]
-     ,bazaCena = [5,7,9,11]
-    ,owoc = prompt("Jakiego owocu szukasz")
-    ,gotOwoc = false
-    ,cena = [] ;
+     bazaCena = [5,7,9,11]
+    owoc = prompt("Jakiego owocu szukasz")
+    gotOwoc = false
+    cena = [] ;
 
 for (let i=0;i<bazaOwoc.length;i++)
     if (owoc === bazaOwoc[i])

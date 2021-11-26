@@ -32,7 +32,7 @@ for(let i=0;i<3;i++)
 */
 
 let answer = prompt("Cena Czy ilosc dostepnych warzyw");
-if(answer=="cena")
+if(answer==="cena")
 {
     let PriceA = prompt("Jaki masz limit hajsu");
     for(let i=0;i<3;i++)
@@ -46,7 +46,7 @@ if(answer=="cena")
         }
     }
 }
-if(answer=="ilosc")
+if(answer==="ilosc")
 {
     let StockA = prompt(' Ile chcesz ')
     for(let i=0;i<3;i++)
@@ -63,44 +63,7 @@ if(answer=="ilosc")
 
 
 /*
-let NameA = prompt("Jakie warzywo cie interesuje");
-let PriceA = prompt("Jaki masz limit hajsu");
-let StockA = prompt("Jak duzo bys mogl kupic");
-for(let i=0;i<3;i++)
-{
-    if (NameA === warzywo[i].Name)
-    {
-        document.write("interesuje cie " + NameA+ ' , mamy je w cenie: ' + warzywo[i].Price + ' i ilości w magazynie: ' + warzywo[i].Stock);
-        document.write('<br>');
-    }
-    else
-    {
-        document.write("NIE MA TAKIEGO WARZYWA ");
-        document.write('<br>');
-    }
 
-    if(PriceA <= warzywo[i].Price )
-    {
-    document.write("W tej cenie mamy: " +warzywo[i].Name);
-    document.write('<br>');
-    }
-    else
-    {
-        document.write("W tej cenie nie mamy warzywa ");
-        document.write('<br>');
-    }
-
-    if(StockA <= warzywo[i].Stock)
-    {
-        document.write("TEST ");
-        document.write('<br>');
-    }
-    else
-    {
-        document.write("Nie mamy tyle na magazynie ");
-        document.write('<br>');
-    }
-}
 
 // alert(komora.brand);
 //let text = prompt("Podaj treść sms-a");
@@ -110,6 +73,8 @@ for(let i=0;i<3;i++)
 
 /*
 let telefon = new Phone;
+
+ */
 telefon.user = 'Tomek';
 let telefony=[komora,telefon];
 alert(telefony[1].user);
